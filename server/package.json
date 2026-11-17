@@ -1,12 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kunuuzul-Jannaa-Markaz Management System - Server API",
   "main": "src/index.js",
- "scripts": {
-  "dev": "nodemon src/index.js",
-  "start": "node src/index.js"
-},
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "init-db": "node src/scripts/initDb.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html[dir="rtl"] {
+    font-family: 'Amiri', serif, system-ui;
+  }
+
+  html[dir="ltr"] {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
