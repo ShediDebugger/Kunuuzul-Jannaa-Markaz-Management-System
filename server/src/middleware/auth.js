@@ -10,7 +10,7 @@ const authenticate = async (req, res, next) => {
 
   const token = authHeader.split(' ')[1];
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'kjm_fallback_secret');
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     
     // Check if user is still active and valid in the database
     const [rows] = await pool.query(

@@ -100,7 +100,7 @@ const login = async (username, password, ipAddress) => {
 
   const token = jwt.sign(
     payload,
-    process.env.JWT_SECRET || 'kjm_fallback_secret',
+    process.env.JWT_SECRET,
     { expiresIn: '12h' }
   );
 

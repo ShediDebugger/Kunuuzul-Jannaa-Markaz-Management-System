@@ -1,4 +1,8 @@
 require('dotenv').config();
+if (!process.env.JWT_SECRET) {
+  throw new Error('JWT_SECRET must be set before starting the server');
+}
+
 const express = require('express');
 const cors = require('cors');
 const pool = require('./config/db');
